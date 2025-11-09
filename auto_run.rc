@@ -1,0 +1,13 @@
+# Auto-run resource script for post-exploitation modules
+# This will execute automatically when a session connects
+
+# Run key post-exploitation modules automatically
+sysinfo
+getuid
+ps
+
+# Background the session to continue receiving more connections
+bg
+
+# To return to a specific session later, use sessions -i <session_id>
+# Then run additional post-exploitation modules as needed
